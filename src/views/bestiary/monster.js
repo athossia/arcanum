@@ -40,12 +40,14 @@ class Monster extends Component {
         <div className="monster-name">{monster.name}</div>
         <div className="monster-details">{monster.size} {monster.type}{monster.subtype && ` (${monster.subtype})`}, {monster.alignment}</div>
       </div>
+      <div className="data-section-divider" />
       <div className="monster-data">
         <div className="data-section monster">
           <MonsterStat class="monster-armor-class" label="Armor Class" value={monster.armor_class} />
           <MonsterStat class="monster-hit-points" label="Hit Points" value={`${monster.hit_points} (${monster.hit_dice})`} />
           <MonsterStat class="monster-speed" label="Speed" value={monster.speed} />
         </div>
+        <div className="data-section-divider" />
         <div className="data-section monster">
           <div className="monster-stat-block">
             <div className="monster-stat"><div className="monster-stat-header">STR</div><div className="monster-stat-value">{monster.strength} (+{this.calculateStatBonus(monster.strength)})</div></div>
@@ -56,6 +58,7 @@ class Monster extends Component {
             <div className="monster-stat"><div className="monster-stat-header">CHA</div><div className="monster-stat-value">{monster.charisma} (+{this.calculateStatBonus(monster.charisma)})</div></div>
           </div>
         </div>
+        <div className="data-section-divider" />
         <div className="data-section monster">
           <MonsterStat class="monster-saving-throws" label="Saving Throws" value={savingThrows} />
           <MonsterStat class="monster-damage-vulnerabilities" label="Damage Vulnerabilities" value={monster.damage_vulnerabilities} />
@@ -66,6 +69,7 @@ class Monster extends Component {
           <MonsterStat class="monster-languages" label="Languages" value={monster.languages} />
           <MonsterStat class="monster-challenge-rating" label="Challenge" value={monster.challenge_rating} />
         </div>
+        <div className="data-section-divider" />
         {monster.special_abilities && <div className="monster-special-abilities">
           {monster.special_abilities.map(ability => {
             return <MonsterAbility name={ability.name} desc={ability.desc} />

@@ -32,7 +32,7 @@ var monsterTypes, challengeRatings;
 class App extends Component {
   render() {
     return (<div className="main-container">
-        <BrowserRouter>
+        <BrowserRouter basename="/arcanum">
           <Route exact path="/" component={Home} />
           <Route exact path="/bestiary" render={() => <Bestiary monsters={monsters} />} />
           <Route exact path="/bestiary/:monsterId" render={(props) => <Monster {...props} monsters={monsters} />} />
