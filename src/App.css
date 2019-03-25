@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('./fonts/LibreBaskerville-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+.main-container {
+  font-family: 'Libre Baskerville';
+  background: url('./images/parchment_bg.jpg') repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.route-container {
+  display: block;
+}
+
+.route-container > .route {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.bestiary-header, .spellbook-header {
+  font-size: 30px;
+  text-align: center;
+}
+
+.monster-types-container, .challenge-ratings-container, .monsters-container {
+  display: inline-block;
+  width: 100%;
+}
+
+.data-section {
+  padding-bottom: 10px;
+}
+
+.monster-type, .challenge-rating {
+  float: left;
+  padding: 5px;
+  font-size: 14px;
+  /* font-weight: bold; */
+}
+
+.monsters-container > .monster {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-bottom: 6px;
+  text-align: left;
+}
+
+.inline-header {
+  font-weight: bold;
+  display: inline;
+}
+
+.monster-container, .spell-container {
+  padding: 20px;
+}
+
+.monster-name {
+  font-size: 20px;
+  font-weight: bold;
+  font-variant: small-caps;
+  -webkit-font-feature-settings: normal;
+  color: rgb(94, 44, 23);
+}
+
+.monster-data {
+  font-size: 13px;
+}
+
+.monster-details {
+  font-size: 11px;
+  font-style: italic;
+}
+
+.monster-armor-class, .monster-hit-points, .monster-speed {
+  
+}
+
+.monster-stat-block {
+
+}
+
+.monster-stat {
+  display: inline-block;
+  text-align: center;
+  margin: 5px;
+}
+
+.monster-stat-header {
+  font-weight: bold;
+  display: block;
+}
+
+.monster-stat-value {
+  display: block;
+}
+
+.monster-actions-title, .monster-legendary-actions-title {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.monster-special-ability-title, .monster-action-title, .monster-legendary-action-title {
+  display: inline;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.spells-container > .spell {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.spell-details {
+  font-size: 11px;
+  font-style: italic;
+}
