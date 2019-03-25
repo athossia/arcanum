@@ -1,13 +1,13 @@
 {
   "main.css": "/arcanum/static/css/main.5b815adf.chunk.css",
-  "main.js": "/arcanum/static/js/main.c81b531e.chunk.js",
-  "main.js.map": "/arcanum/static/js/main.c81b531e.chunk.js.map",
+  "main.js": "/arcanum/static/js/main.da4c63a2.chunk.js",
+  "main.js.map": "/arcanum/static/js/main.da4c63a2.chunk.js.map",
   "runtime~main.js": "/arcanum/static/js/runtime~main.6775b79d.js",
   "runtime~main.js.map": "/arcanum/static/js/runtime~main.6775b79d.js.map",
   "static/js/2.538ed0c3.chunk.js": "/arcanum/static/js/2.538ed0c3.chunk.js",
   "static/js/2.538ed0c3.chunk.js.map": "/arcanum/static/js/2.538ed0c3.chunk.js.map",
   "index.html": "/arcanum/index.html",
-  "precache-manifest.57f9dba6ae6a108bcb24be4886eed4a2.js": "/arcanum/precache-manifest.57f9dba6ae6a108bcb24be4886eed4a2.js",
+  "precache-manifest.bb5ddc92963017b006c6c175d701cb24.js": "/arcanum/precache-manifest.bb5ddc92963017b006c6c175d701cb24.js",
   "service-worker.js": "/arcanum/service-worker.js",
   "static/css/main.5b815adf.chunk.css.map": "/arcanum/static/css/main.5b815adf.chunk.css.map",
   "static/media/App.css": "/arcanum/static/media/parchment_bg.30652305.jpg"
