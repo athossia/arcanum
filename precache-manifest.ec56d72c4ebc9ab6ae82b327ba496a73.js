@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/arcanum/static/css/main.d6cef17d.chunk.css"
   },
   {
-    "revision": "e0d927c9b489b9b4e729a393cec42d06",
+    "revision": "3de09c49d9525d13caf3c0668ec639db",
     "url": "/arcanum/index.html"
   }
 ];
