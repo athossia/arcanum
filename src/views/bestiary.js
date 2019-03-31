@@ -76,7 +76,7 @@ class Bestiary extends Component {
       crFilter: []
     });
 
-    localStorage.setItem('bestiary-ce-filter', JSON.stringify([]));
+    localStorage.setItem('bestiary-cr-filter', JSON.stringify([]));
   }
 
   isTypeFilterActive(type) {
@@ -102,9 +102,9 @@ class Bestiary extends Component {
     return (<div>
       <div className="bestiary-header">D&D 5e Bestiary</div>
       <div className="monster-types-container">
-        <a onClick={() => this.resetTypeFilter()} className="filter-button"><div className={"monster-type" + (this.state.typeFilter.length === 0 ? " active-filter" : "")}>all</div></a>
+        <a onClick={() => this.resetTypeFilter()} className="filter-button"><div className={"monster-type" + (this.state.typeFilter.length === 0 ? " active-filter" : " inactive-filter")}>all</div></a>
         {monsterTypes.map(type => {
-          let activeClass = "";
+          let activeClass = " inactive-filter";
           if(this.isTypeFilterActive(type)) {
             activeClass = " active-filter";
           }
@@ -112,9 +112,9 @@ class Bestiary extends Component {
         })}
       </div>
       <div className="challenge-ratings-container">
-      <a onClick={() => this.resetCrFilter()} className="filter-button"><div className={"challenge-rating" + (this.state.crFilter.length === 0 ? " active-filter" : "")}>all</div></a>
+      <a onClick={() => this.resetCrFilter()} className="filter-button"><div className={"challenge-rating" + (this.state.crFilter.length === 0 ? " active-filter" : " inactive-filter")}>all</div></a>
         {challengeRatings.map(cr => {
-          let activeClass = "";
+          let activeClass = " inactive-filter";
           if(this.isCrFilterActive(cr)) {
             activeClass = " active-filter";
           }

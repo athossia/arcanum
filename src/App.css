@@ -73,6 +73,7 @@ body {
   padding-top: 3px;
   padding-bottom: 3px;
   font-size: 18px;
+  margin: 3px;
   /* font-weight: bold; */
 }
 
@@ -169,8 +170,15 @@ body {
 }
 
 .active-filter {
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: bold;
+  border: 1px solid rgb(88, 19, 15);
+  border-radius: 3px;
+}
+
+.inactive-filter {
+  border: 1px dotted #ababab;
+  border-radius: 3px;
 }
 
 .filter-button {
