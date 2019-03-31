@@ -47,8 +47,18 @@ class App extends Component {
 class Home extends Component {
   render() {
     return (<div className="route-container">
-      <Link className="route" to="/bestiary">Bestiary</Link>
-      <Link className="route" to="/spellbook">Spellbook</Link>
+      <Link className="route-button" to="/bestiary">
+        <div className="route-label">
+          <img src={require("./images/monster_icon.png")}/>
+          Bestiary
+        </div>
+      </Link>
+      <Link className="route-button" to="/spellbook">
+        <div className="route-label">
+          <img src={require("./images/spellbook_icon.png")}/>
+          Spellbook
+        </div>
+      </Link>
     </div>);
   }
 }
