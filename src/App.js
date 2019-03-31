@@ -25,20 +25,20 @@ import Bestiary from './views/bestiary';
 import Monster from './views/bestiary/monster';
 import Spellbook from './views/spellbook';
 import Spell from './views/spellbook/spell';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { HashRouter, Route, Link } from 'react-router-dom';
 
 var monsterTypes, challengeRatings;
 
 class App extends Component {
   render() {
     return (<div className="main-container">
-        <BrowserRouter basename="/arcanum">
+        <HashRouter>
           <Route exact path="/" component={Home} />
           <Route exact path="/bestiary" render={() => <Bestiary monsters={monsters} />} />
           <Route exact path="/bestiary/:monsterId" render={(props) => <Monster {...props} monsters={monsters} />} />
           <Route exact path="/spellbook" render={() => <Spellbook spells={spells} />} />
           <Route exact path="/spellbook/:spellId" render={(props) => <Spell {...props} spells={spells} />} />
-        </BrowserRouter>
+        </HashRouter>
       </div>
     );
   }
