@@ -1,7 +1,15 @@
 self.__precacheManifest = [
   {
+    "revision": "885e4ad600c5f86de860ca4a003e9b5d",
+    "url": "/arcanum/static/media/spellbook_icon.885e4ad6.png"
+  },
+  {
     "revision": "30652305ca828b4cdb79936fd0398ccb",
     "url": "/arcanum/static/media/parchment_bg.30652305.jpg"
+  },
+  {
+    "revision": "a7e26744a5e786b08b94e672b4a079c4",
+    "url": "/arcanum/static/media/monster_icon.a7e26744.png"
   },
   {
     "revision": "c5d9609b9a33bff8b5b193731d789d70",
@@ -12,19 +20,19 @@ self.__precacheManifest = [
     "url": "/arcanum/static/js/runtime~main.6775b79d.js"
   },
   {
-    "revision": "a7141ed3ec9b243e8154",
-    "url": "/arcanum/static/js/main.da4c63a2.chunk.js"
+    "revision": "12af1ae4704c7d7cfebc",
+    "url": "/arcanum/static/js/main.fe8571b2.chunk.js"
   },
   {
     "revision": "4eec0762c0b02bb05b4f",
     "url": "/arcanum/static/js/2.538ed0c3.chunk.js"
   },
   {
-    "revision": "a7141ed3ec9b243e8154",
-    "url": "/arcanum/static/css/main.5b815adf.chunk.css"
+    "revision": "12af1ae4704c7d7cfebc",
+    "url": "/arcanum/static/css/main.856ba485.chunk.css"
   },
   {
-    "revision": "5da7440f82be7b17d81d0c163d302ca7",
+    "revision": "4496eaa7f2f8817f8d182b91c49bf4e4",
     "url": "/arcanum/index.html"
   }
 ];
