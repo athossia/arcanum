@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/arcanum/static/js/runtime~main.6775b79d.js"
   },
   {
-    "revision": "6871b166026a1884e48b",
+    "revision": "0f3bff1566aa345bd904",
     "url": "/arcanum/static/js/main.869558c0.chunk.js"
   },
   {
@@ -28,11 +28,11 @@ self.__precacheManifest = [
     "url": "/arcanum/static/js/2.bbf67d49.chunk.js"
   },
   {
-    "revision": "6871b166026a1884e48b",
-    "url": "/arcanum/static/css/main.c69e5b77.chunk.css"
+    "revision": "0f3bff1566aa345bd904",
+    "url": "/arcanum/static/css/main.5388a3e8.chunk.css"
   },
   {
-    "revision": "0b2e0ffb43e8044caef83b7f4e7a2bb7",
+    "revision": "678632677a4f147975079ef21031465b",
     "url": "/arcanum/index.html"
   }
 ];

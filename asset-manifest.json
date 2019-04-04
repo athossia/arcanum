@@ -1,5 +1,5 @@
 {
-  "main.css": "/arcanum/static/css/main.c69e5b77.chunk.css",
+  "main.css": "/arcanum/static/css/main.5388a3e8.chunk.css",
   "main.js": "/arcanum/static/js/main.869558c0.chunk.js",
   "main.js.map": "/arcanum/static/js/main.869558c0.chunk.js.map",
   "runtime~main.js": "/arcanum/static/js/runtime~main.6775b79d.js",
@@ -7,9 +7,9 @@
   "static/js/2.bbf67d49.chunk.js": "/arcanum/static/js/2.bbf67d49.chunk.js",
   "static/js/2.bbf67d49.chunk.js.map": "/arcanum/static/js/2.bbf67d49.chunk.js.map",
   "index.html": "/arcanum/index.html",
-  "precache-manifest.2d4a8851e11515a94778ddd6c11a17a7.js": "/arcanum/precache-manifest.2d4a8851e11515a94778ddd6c11a17a7.js",
+  "precache-manifest.df791410111294c00020b2b2364dfaf2.js": "/arcanum/precache-manifest.df791410111294c00020b2b2364dfaf2.js",
   "service-worker.js": "/arcanum/service-worker.js",
-  "static/css/main.c69e5b77.chunk.css.map": "/arcanum/static/css/main.c69e5b77.chunk.css.map",
+  "static/css/main.5388a3e8.chunk.css.map": "/arcanum/static/css/main.5388a3e8.chunk.css.map",
   "static/media/App.css": "/arcanum/static/media/parchment_bg.30652305.jpg",
   "static/media/monster_icon.png": "/arcanum/static/media/monster_icon.a7e26744.png",
   "static/media/spellbook_icon.png": "/arcanum/static/media/spellbook_icon.885e4ad6.png"
