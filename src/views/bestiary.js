@@ -7,6 +7,8 @@ class Bestiary extends Component {
   constructor(props) {
     super(props);
 
+    this.handleNameFilterChange = this.handleNameFilterChange.bind(this);
+
     // Initialize filters as empty.  Empty filters count as no filter,
     // so all results are shown.  When filters are added, they are pushed
     // into the array, and then only items matching what is in the arrays
@@ -14,10 +16,12 @@ class Bestiary extends Component {
 
     let localStorageTypeFilter = localStorage.getItem('bestiary-type-filter');
     let localStorageCrFilter = localStorage.getItem('bestiary-cr-filter');
+    let localStorageNameFilter = localStorage.getItem('bestiary-name-filter');
 
     this.state = {
       typeFilter: localStorageTypeFilter ? JSON.parse(localStorageTypeFilter) : [],
-      crFilter: localStorageCrFilter ? JSON.parse(localStorageCrFilter) : []
+      crFilter: localStorageCrFilter ? JSON.parse(localStorageCrFilter) : [],
+      nameFilter: localStorageNameFilter ? localStorageNameFilter : ''
     }
   }
   componentWillMount() {
@@ -79,6 +83,18 @@ class Bestiary extends Component {
     localStorage.setItem('bestiary-cr-filter', JSON.stringify([]));
   }
 
+  handleNameFilterChange(data) {
+    let name = data.target.value.toLowerCase();
+
+    this.setState({
+      nameFilter: name
+    });
+
+    console.log(require('util').inspect(name))
+
+    localStorage.setItem('bestiary-name-filter', name);
+  }
+
   isTypeFilterActive(type) {
     if(this.state && this.state.typeFilter && this.state.typeFilter.length > 0) {
       if(this.state.typeFilter.indexOf(type) > -1) {
@@ -89,11 +105,17 @@ class Bestiary extends Component {
   }
 
   isCrFilterActive(cr) {
-    // cr = cr.toString();
     if(this.state && this.state.crFilter && this.state.crFilter.length > 0) {
       if(this.state.crFilter.indexOf(cr) > -1) {
         return true;
       }
+    }
+    return false;
+  }
+
+  isNameFilterActive(name) {
+    if(this.state && this.state.nameFilter && this.state.nameFilter.length > 0) {
+      return true;
     }
     return false;
   }
@@ -121,6 +143,9 @@ class Bestiary extends Component {
           return <a onClick={() => this.toggleChallengeFilter(cr)} className="filter-button"><div className={"challenge-rating" + activeClass}>{cr}</div></a>
         })}
       </div>
+      <div className="">
+        <input type="text" value={this.state.nameFilter} onChange={this.handleNameFilterChange} />
+      </div>
       <div className="monsters-container">
         {this.props.monsters.map(monster => {
           if(this.state && this.state.typeFilter && this.state.typeFilter.length > 0) {
@@ -130,6 +155,11 @@ class Bestiary extends Component {
           }
           if(this.state && this.state.crFilter && this.state.crFilter.length > 0) {
             if(this.state.crFilter.indexOf(monster.challenge_rating) == -1) {
+              return null;
+            }
+          }
+          if(this.state && this.state.nameFilter && this.state.nameFilter.length > 0) {
+            if(monster.name.toLowerCase().indexOf(this.state.nameFilter) == -1) {
               return null;
             }
           }
